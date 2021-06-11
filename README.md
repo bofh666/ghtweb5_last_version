@@ -27,4 +27,14 @@
 - Темы находятся в папке /themes/ Что-бы создать свою, надо скопировать ghtweb и сохранить с другим именем
 - Логи (ошибки, нотисы и т.д) находятся в папке /protected/runtime/application.log
 - Веб сервер должен смотреть в папку /public
+- При использовании обратного прокси-сервера с терминированием на нем HTTPS важно передавать схему в заголовке X-Forwarded-Proto, например (для nginx):
+```
+    location / {
+        proxy_pass http://192.168.1.105;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  
+    }
+```
  
