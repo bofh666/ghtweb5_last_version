@@ -44,5 +44,5 @@ yum -y install composer
 cd $GHTWEB_ROOT
 composer upgrade stichoza/google-translate-php
 composer require stichoza/google-translate-php
-sed -i 's//g' protected/modules/backend/models/forms/ShopCategoryForm.php
+sed -i 's/TranslateClient/GoogleTranslate/g' protected/modules/backend/models/forms/ShopCategoryForm.php
 ```
