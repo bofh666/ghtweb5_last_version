@@ -38,3 +38,11 @@
     }
 ```
 - Дату старта сервера для счетчика обратного отсчета можно указать в файле themes/ghtweb/views/layouts/master.php (внизу)
+- Есть проблема с созданием донат магазина, лечится примерно так:
+```
+yum -y install composer
+cd $GHTWEB_ROOT
+composer upgrade stichoza/google-translate-php
+composer require stichoza/google-translate-php
+sed -i 's//g' protected/modules/backend/models/forms/ShopCategoryForm.php
+```
