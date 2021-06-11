@@ -37,4 +37,4 @@
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  
     }
 ```
- 
+- Дату старта сервера для счетчика обратного отсчета можно указать в файле themes/ghtweb/views/layouts/master.php (внизу)
