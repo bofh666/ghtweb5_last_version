@@ -46,3 +46,4 @@ composer upgrade stichoza/google-translate-php
 composer require stichoza/google-translate-php
 sed -i 's/TranslateClient/GoogleTranslate/g' protected/modules/backend/models/forms/ShopCategoryForm.php
 ```
+- для отображения иконок нужно распаковать файл icons_2014_07_12.zip в public/images/items
