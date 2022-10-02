@@ -14,6 +14,8 @@
 - php-gd
 - php-xml
 
+> The mcrypt extension has been abandonware for nearly a decade now, and was also fairly complex to use. It has therefore been deprecated in favour of OpenSSL, where it will be removed from the core and into PECL in PHP 7.2.
+
 ## Установка:
 - скачать архив или воспользоваться git clone<br>
 - распаковать на ваш веб сервер<br>
@@ -27,6 +29,8 @@
 - Темы находятся в папке /themes/ Что-бы создать свою, надо скопировать ghtweb и сохранить с другим именем
 - Логи (ошибки, нотисы и т.д) находятся в папке /protected/runtime/application.log
 - Веб сервер должен смотреть в папку /public
+- если появляются ошибки 404, проверить AllowOverried -- должно быть All
+- Пароль пользователя БД должен быть задан с использованием плагина [mysql_native_password](https://mariadb.com/kb/en/authentication-plugin-mysql_native_password/)
 - При использовании обратного прокси-сервера с терминированием на нем HTTPS важно передавать схему в заголовке X-Forwarded-Proto, например (для nginx):
 ```
     location / {
