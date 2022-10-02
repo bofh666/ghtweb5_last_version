@@ -3,7 +3,7 @@
 namespace app\modules\backend\models\forms;
 
 use Cocur\Slugify\Slugify;
-use Stichoza\GoogleTranslate\TranslateClient;
+use Stichoza\GoogleTranslate\GoogleTranslate;
 
 class ShopCategoryForm extends \ShopCategories
 {
@@ -57,7 +57,7 @@ class ShopCategoryForm extends \ShopCategories
 
     public function generateSlug(\CEvent $event)
     {
-        $tr = new TranslateClient('ru');
+        $tr = new GoogleTranslate('ru');
         $name = $tr->translate($event->sender->name);
 
         $event->sender->link = substr((new Slugify())->slugify($name), 0, 255);

@@ -5,3 +5,4 @@ yarn.lock
 /themes/backend/assets/
 composer.lock
 themes/backend/assets/package-lock\.json
+public/assets/

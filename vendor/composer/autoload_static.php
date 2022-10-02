@@ -4,22 +4,33 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e
+class ComposerStaticInita4201db8c3926d2737875ef6a94e8cdf
 {
     public static $files = array (
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'aa75ea0761a2f40c1f3b32ad314f86c4' => __DIR__ . '/..' . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpseclib3\\' => 11,
+        ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Stichoza\\GoogleTranslate\\' => 25,
         ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
+            'ParagonIE\\ConstantTime\\' => 23,
         ),
         'I' => 
         array (
@@ -38,13 +49,30 @@ class ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpseclib3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
         'Stichoza\\GoogleTranslate\\' => 
         array (
-            0 => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Stichoza/GoogleTranslate',
+            0 => __DIR__ . '/..' . '/stichoza/google-translate-php/src',
         ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
         'Intervention\\Image\\' => 
         array (
@@ -68,22 +96,16 @@ class ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'S' => 
-        array (
-            'Stichoza\\GoogleTranslate\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/stichoza/google-translate-php/src',
-            ),
-        ),
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit59ed9913fe3fad1b38876ce19fe56f1e::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita4201db8c3926d2737875ef6a94e8cdf::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita4201db8c3926d2737875ef6a94e8cdf::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita4201db8c3926d2737875ef6a94e8cdf::$classMap;
 
         }, null, ClassLoader::class);
     }

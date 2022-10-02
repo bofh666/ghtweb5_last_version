@@ -1,0 +1,115 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1183px) {
+	.char {
+		display: none;
+	}
+	.carousel-caption .text {
+		text-align: center;
+		max-width: 770px;
+		position: relative;
+		top: -80px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 991) {
+	.online_block {
+		/* padding-left: 20px; */
+		display: inline-block;
+		padding: 0px 10px;
+	}
+
+}
+/* Large Devices, Wide Screens 
+
+*/
+@media only screen and (max-width : 1199px) {
+	.title h1 {
+		font-size: 22px;
+	}
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.cp_block {
+		float: left !important;
+	}
+
+
+	.main_menu ul.vertical {
+		background-color: #191310;
+		display: none;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		padding: 0;
+	}
+	.main_menu ul.vertical li:hover {
+		background-color: beige;
+		color: #DAA374;
+	}
+	.main_menu ul.vertical a {
+
+		color: #DAA374;
+	}
+	.main_menu ul.vertical li {
+		display: block;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.cp_block {
+		display: none;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main_menu ul.vertical {
+		display: block !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
